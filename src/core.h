@@ -95,4 +95,8 @@
   #include "hal/m8_int.h"
 #endif
 
-
+#if (BOARD == _MK_BLC20_)
+  #include "hal/m168.h"
+  #include "hal/mkblctl20.h"
+  #include "hal/m168_int.h"
+#endif

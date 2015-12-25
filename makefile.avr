@@ -12,7 +12,7 @@ OBJDUMP = $(TCHAIN)avr-objdump
 NM = $(TCHAIN)avr-nm
 AVRDUDE ?= c:/bin/avrdude
 COMPORT ?= com5
-BOARD ?= _BS_NFET_
+BOARD ?= _MK_BLC20_
 
 # Add .d to Make's recognized suffixes.
 SUFFIXES += .d
@@ -24,7 +24,7 @@ lc = $(subst A,a,$(subst B,b,$(subst C,c,$(subst D,d,$(subst E,e,$(subst F,f,$(s
 OBJECT_DIR = obj/avr
 BIN_DIR = bin/avr
 OUT_FILE = wii_esc_ng
-MCU?=atmega8
+MCU?=atmega168p
 F_CPU?=16000000L
 
 # Assembler, Compiler and Linker flags and linker script settings
